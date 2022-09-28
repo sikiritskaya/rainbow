@@ -1,25 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
+import Rainbow from './components/Rainbow';
 
 function App() {
+  let colors = ['red', 'orange', 'yellow', 'green', '#00BFFF', 'blue', 'purple']
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Rainbow colors={colors}> Hello </Rainbow>
+  )
 }
 
 export default App;
